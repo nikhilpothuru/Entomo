@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Wed May 27 22:56:18 PDT 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0172-59da-4d0f-0000077a63c8 
-on database directory memory:/Users/nikhilpothuru/Bugtracker/Entomo/Backend/aebcd768-117f-4e7b-b6fa-b4f8114ef9ba with class loader sun.misc.Launcher$AppClassLoader@764c12b6 
+Thu May 28 22:59:26 PDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0172-5f03-86b7-00000f4e78d0 
+on database directory memory:/Users/nikhilpothuru/Bugtracker/Entomo/backend/36b0ac3a-3a32-40f6-968b-f053f6accd4c with class loader sun.misc.Launcher$AppClassLoader@764c12b6 
 Loaded from file:/Users/nikhilpothuru/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_111-b14
-user.dir=/Users/nikhilpothuru/Bugtracker/Entomo/Backend
+user.dir=/Users/nikhilpothuru/Bugtracker/Entomo/backend
 os.name=Mac OS X
 os.arch=x86_64
 os.version=10.15.4

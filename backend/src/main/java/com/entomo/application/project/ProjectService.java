@@ -6,6 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.entomo.application.exception.EntityNotFoundException;
+
 @Service
 public class ProjectService {
 	
@@ -27,7 +29,12 @@ public class ProjectService {
 	 * @return Returns a project 
 	 */
 	public Project getSingleProject(int id){
-		return projectRepository.findById(id).orElse(null);  
+		
+		Project returnProject = projectRepository.findById(id).orElse(null);
+		if(returnProject == null) {
+			throw new EntityNotFoundException(ProjectService.class);
+		}
+		return returnProject;  
 	}
 	
 	/**
@@ -38,6 +45,21 @@ public class ProjectService {
 		projectRepository.save(project); 
 	}
 	
+	/**
+	 * @name updateProject
+	 * @return Doesn't return a value
+	 */
+	public void updateProject(Project project, int id){
+		project.setId(id);
+		projectRepository.save(project); 
+	}
 	
+	/**
+	 * @name deleteProject
+	 * @return Doesn't return a value
+	 */
+	public void deleteProject(int id){
+		projectRepository.deleteById(id);
+	}
 	 
 }
