@@ -5,8 +5,8 @@ package com.entomo.application.exception;
 @SuppressWarnings("serial")
 public class EntityNotFoundException extends RuntimeException {
 	
-	 public EntityNotFoundException(@SuppressWarnings("rawtypes") Class clazz) {
-	        super(EntityNotFoundException.generateMessage(clazz.getSimpleName() + " cannot find a value for the parameter."));
+	 public EntityNotFoundException(@SuppressWarnings("rawtypes") Class forClass, int id) {
+	        super(EntityNotFoundException.generateMessage("Cannot find a " + forClass.getSimpleName() + " with id " + id));
 	    }
 
     private static String generateMessage(String entity) {

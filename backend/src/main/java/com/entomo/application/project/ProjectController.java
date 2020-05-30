@@ -27,7 +27,7 @@ public class ProjectController {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST, value="/project")
-	public void addProject(@RequestBody Project project) {
+	public void addProject(@RequestBody Project project) throws Exception {
 		projectService.addProject(project);
 	}
 	

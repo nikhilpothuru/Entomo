@@ -34,4 +34,22 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 		return buildResponseEntity(apiError); 
 		
 	}
+	
+	@ExceptionHandler(value = DuplicateEntryException.class)
+	protected ResponseEntity<Object> handleDuplicateEntryException(DuplicateEntryException ex){
+		
+		ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST); 
+		apiError.setMessage(ex.getMessage());
+		return buildResponseEntity(apiError); 
+		
+	}
+	
+	@ExceptionHandler(value = NullEntryException.class)
+	protected ResponseEntity<Object> handleNullEntryException(NullEntryException ex){
+		
+		ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST); 
+		apiError.setMessage(ex.getMessage());
+		return buildResponseEntity(apiError); 
+		
+	}
 }
