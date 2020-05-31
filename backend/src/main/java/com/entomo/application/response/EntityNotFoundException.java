@@ -1,4 +1,4 @@
-package com.entomo.application.exception;
+package com.entomo.application.response;
 
 
 

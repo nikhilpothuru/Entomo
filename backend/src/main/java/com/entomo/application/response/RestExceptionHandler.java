@@ -1,4 +1,4 @@
-package com.entomo.application.exception;
+package com.entomo.application.response;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
